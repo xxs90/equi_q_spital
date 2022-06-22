@@ -17,7 +17,6 @@ from scripts.create_agent import createAgent
 from utils.parameters import *
 from storage.buffer import QLearningBufferExpert, QLearningBuffer
 from storage.per_buffer import PrioritizedQLearningBuffer, EXPERT, NORMAL
-from helping_hands_rl_envs import env_factory
 from utils.logger import Logger
 from utils.schedules import LinearSchedule
 from utils.torch_utils import rand_perlin_2d, getPerlinFade, addPerlinToBuffer, addGaussianToBuffer

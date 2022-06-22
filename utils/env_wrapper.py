@@ -1,9 +1,24 @@
 import torch
-from helping_hands_rl_envs import env_factory
+import sys
+sys.path.append('./')
+sys.path.append('..')
+import numpy as np
+from RLBench.rlbench.action_modes.action_mode import MoveArmThenGripper
+from RLBench.rlbench.action_modes.arm_action_modes import JointVelocity, EndEffectorPoseViaPlanning
+from RLBench.rlbench.action_modes.gripper_action_modes import Discrete
+from RLBench.rlbench.environment import Environment
+from RLBench.rlbench.observation_config import ObservationConfig
+from RLBench.rlbench.tasks import PutItemInDrawer as tasks
+import matplotlib.pyplot as plt
+import utils
 
 class EnvWrapper:
     def __init__(self, num_processes, simulator, env, env_config, planner_config):
-        self.envs = env_factory.createEnvs(num_processes, simulator, env, env_config, planner_config)
+        self.envs = Environment(action_mode=MoveArmThenGripper(
+                                    arm_action_mode=EndEffectorPoseViaPlanning(), gripper_action_mode=Discrete()),
+                                obs_config=ObservationConfig(),
+                                headless=False,
+                                robot_setup='panda')
 
     def reset(self):
         (states, in_hands, obs) = self.envs.reset()
