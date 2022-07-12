@@ -2,13 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="798a5455-a76e-45b1-a609-4973da728048" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/RLBench" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/env_wrapper.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/env_wrapper.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -121,7 +127,7 @@
       <option name="presentableId" value="Default" />
       <updated>1655748156661</updated>
       <workItem from="1655748157886" duration="4656000" />
-      <workItem from="1655924014426" duration="4254000" />
+      <workItem from="1655924014426" duration="5174000" />
     </task>
     <servers />
   </component>
